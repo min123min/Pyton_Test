@@ -8,7 +8,7 @@ then run the file.
 """
 #print("This shouldn't print")
 print("This should print", "2" , "3")
-print("4", "5" , "6")
+print("4", "5" , "6", "7")
 """
 ==== Exercise 2: print multiple things ====
 For this exercise we are going to print multiple things at once. To do this we can
