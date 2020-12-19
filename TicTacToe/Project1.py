@@ -12,7 +12,7 @@ GlobalPostions = {
     }
 def   UserInput():
     if CheckIfOver()==False:
-        if empty_squares == True:
+        if empty_squares() == True:
             InputX = int(input(" Please put a Number from 1 to 9 "))
             x=0
             while( int(x) == 0):
@@ -25,7 +25,8 @@ def   UserInput():
                         x = 10
                 else:
                     print("wrong input. Try again")
-        print("no free moves")
+        else:
+            print("no free moves")
 
     else:
         print("Game Over")
@@ -33,7 +34,7 @@ def empty_squares():
         i = 1
         while  i< 10:
             num = int(GlobalPostions[i][2])
-            if num.isdigit() == True:
+            if (num == int) == True :
                 return True
         i += 1 
         return True
